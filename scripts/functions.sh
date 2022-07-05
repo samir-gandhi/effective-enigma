@@ -30,7 +30,7 @@ getEnv() {
   fi
   SERVER_PROFILE_BRANCH="$(echo "${GITHUB_REF}" | sed -e "s#refs/heads/##g")"
   echo "${YELLOW}INFO: Environment is: ${ENV}${NC}"
-  export ENV
+  export ENV SERVER_PROFILE_BRANCH
 }
 
 getNamespace() {
